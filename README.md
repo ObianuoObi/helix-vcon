@@ -256,7 +256,7 @@ curl http://localhost:8005/vcon
 ```
 ## Usage
 
-9. **Test in Helix with queries like:**
+Test in Helix with queries like:
 
 - "Show me calls with Frank Smith"
 - "What was discussed in the project timeline?"
