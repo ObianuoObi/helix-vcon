@@ -249,14 +249,34 @@ spec:
 
 8. **Test this Setup
 
-Verify VCON
+Verify VCON server is working:
+
+```
+curl http://localhost:8005/vcon
+```
 ## Usage
 
-Access Helix UI at http://localhost:8080 and try these queries:
+9. **Test in Helix with queries like:**
 
 - "Show me calls with Frank Smith"
 - "What was discussed in the project timeline?"
 - "List all calls from February 7th"
+
+## Important Notes:
+
+Use host.docker.internal:8005 in Helix config (not localhost)
+VCON server must listen on 0.0.0.0:8005
+No spaces in the URL configuration
+Respect Together AI rate limits (60 RPM)
+Keep VCON server running while using Helix
+
+##Troubleshooting:
+
+Check VCON server is running
+Verify URL format in Helix config
+Ensure no trailing spaces in URL
+Check Docker network connectivity
+Monitor rate limiting
 
 ## Contributing
 1. Fork the repository
