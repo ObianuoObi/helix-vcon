@@ -33,17 +33,26 @@ chmod +x install.sh
 
 ```
 
-2. **Start Helix**bash
-cd /opt/helix
-docker compose up
-3. **Create VCON Server**bash
-mkdir -p ~/vcon-server
-cd vcon-server
-
-**Create main.go**
+2. **Start Helix**
 
 ```
-	import (
+cd /opt/helix
+docker compose up
+```
+
+3. **Create VCON Server**
+```
+mkdir -p ~/vcon-server
+cd vcon-server
+```
+
+**Create main.go**
+```
+nano main.go
+```
+
+```
+import (
     "encoding/json"
     "log"
     "net/http"
@@ -128,8 +137,9 @@ func searchVcons(w http.ResponseWriter, r *http.Request) {
     json.NewEncoder(w).Encode(results)
 }
 ```
-
-**go run main.go**
+```
+go run main.go
+```
 
 4. **Configure Environment**
 Copy .env.example to .env and add your Together AI key.
@@ -143,6 +153,7 @@ Access Helix UI at http://localhost:8080 and try these queries:
 - "List all calls from February 7th"
 
 ## Project Structurehelix-vcon-telco/
+
 ├── .env.example
 ├── .gitignore
 ├── README.md
