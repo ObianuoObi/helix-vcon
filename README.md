@@ -264,19 +264,19 @@ Test in Helix with queries like:
 
 ## Important Notes:
 
-Use host.docker.internal:8005 in Helix config (not localhost)
-VCON server must listen on 0.0.0.0:8005
-No spaces in the URL configuration
-Respect Together AI rate limits (60 RPM)
-Keep VCON server running while using Helix
+- Use host.docker.internal:8005 in Helix config (not localhost)
+- VCON server must listen on 0.0.0.0:8005
+- No spaces in the URL configuration
+- Respect Together AI rate limits (60 RPM)
+- Keep VCON server running while using Helix
 
-##Troubleshooting:
+## Troubleshooting:
 
-Check VCON server is running
-Verify URL format in Helix config
-Ensure no trailing spaces in URL
-Check Docker network connectivity
-Monitor rate limiting
+- Check VCON server is running
+- Verify URL format in Helix config
+- Ensure no trailing spaces in URL
+- Check Docker network connectivity
+- Monitor rate limiting
 
 ## Contributing
 1. Fork the repository
