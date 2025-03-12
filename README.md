@@ -21,7 +21,8 @@ This project helps you deploy a Helix app that interfaces with a VCON (Voice Con
 
 ## Quick Start
 
-1. **Install Helix**bash
+1. **Install Helix**
+```
 cd /opt
 sudo mkdir helix
 sudo chown $USER:$USER helix
@@ -29,6 +30,8 @@ cd helix
 curl -O https://raw.githubusercontent.com/helixml/helix/main/install.sh
 chmod +x install.sh
 ./install.sh
+
+```
 
 2. **Start Helix**bash
 cd /opt/helix
@@ -39,6 +42,7 @@ cd vcon-server
 
 **Create main.go**
 
+```
 	import (
     "encoding/json"
     "log"
@@ -123,6 +127,7 @@ func searchVcons(w http.ResponseWriter, r *http.Request) {
     
     json.NewEncoder(w).Encode(results)
 }
+```
 
 **go run main.go**
 
