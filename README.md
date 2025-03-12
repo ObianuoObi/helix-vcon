@@ -46,10 +46,11 @@ mkdir -p ~/vcon-server
 cd vcon-server
 ```
 
-**Create main.go**
+4. **Create main.go**
 ```
 nano main.go
 ```
+5. **Copy code and paste**
 
 ```
 import (
@@ -141,7 +142,8 @@ func searchVcons(w http.ResponseWriter, r *http.Request) {
 go run main.go
 ```
 
-4. **Configure Environment**
+6. **Configure Environment**
+
 Copy .env.example to .env and add your Together AI key.
 
 ## Usage
@@ -151,15 +153,6 @@ Access Helix UI at http://localhost:8080 and try these queries:
 - "Show me calls with Frank Smith"
 - "What was discussed in the project timeline?"
 - "List all calls from February 7th"
-
-## Project Structurehelix-vcon-telco/
-
-├── .env.example
-├── .gitignore
-├── README.md
-├── helix.yaml
-└── vcon-server/
-└── main.go
 
 ## Contributing
 1. Fork the repository
